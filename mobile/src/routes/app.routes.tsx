@@ -5,10 +5,16 @@ const { Navigator, Screen } = createNativeStackNavigator();
 import { Home } from '../screens/Home'
 import { New } from '../screens/New'
 import { Habit } from '../screens/Habit'
+import { SignIn } from '../screens/SignIn';
 
 export function AppRoutes() {
     return (
         <Navigator screenOptions={{ headerShown: false}}>
+            <Screen
+                name='sigin'
+                component={SignIn}
+            />
+            
             <Screen
                 name="home"
                 component={Home}
